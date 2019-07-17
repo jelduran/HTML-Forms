@@ -1,0 +1,76 @@
+/* TAGS */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background: gray;
+}
+
+main{
+    width: 30%;
+    height: 80%;
+    margin: 0 auto;
+    background: yellow;
+}
+
+footer{
+    height: 15%;
+    background: red;
+}
+
+
+/* CLASSES */
+
+.full-width{
+    width: 100%;
+}
+
+.full-height{
+    height: 100%;
+}
+
+.auto-height{
+    height: auto;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+/* IDENTIFIERS */
+
+#main-header{
+    height: 15%;
+    background: blue;
+}
+
+#main-container{
+    height: 70%;
+    background: green;
+}
+
+#main-container > header{
+    height: 20%;
+    background: magenta;
+}
+
+#form-container{
+    height: 80%;
+}
+
+#form-container > header{
+    height: 20%;
+    width: 30%;
+    margin: 0 auto;
+    background: burlywood;
+}
