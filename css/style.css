@@ -51,7 +51,7 @@ footer{
 
 #main-header{
     height: 15%;
-    background: blue;
+    background: yellow;
 }
 
 #main-container{
@@ -73,4 +73,69 @@ footer{
     width: 30%;
     margin: 0 auto;
     background: burlywood;
+}
+
+#navigation-wrap {
+  height: 50px;
+
+}
+
+#navigation-wrap {
+  float: none;
+  padding: 10px 20px;
+
+}
+
+#navigation-container {
+  font-family: sans-serif;
+  font-weight: normal;
+  color: black;
+
+  }
+
+#navigation-container {
+  float: right;
+}
+
+#navigation-column {
+  float: left;
+  margin-left: 20px;
+  text-align: right;
+
+}
+
+#div {
+
+}
+
+#account-recovery-link {
+   color: black;
+
+}
+
+#account-recovery-link{
+   text-decoration: none;
+
+}
+
+div#navigation-column {
+    float: left;
+    margin-left: 10px;
+    text-align: right;
+}
+
+button#SIGN-IN-button.button-submit {
+  background: blue;
+ border-radius: 10px;
+ border: 20px solid blue;
+ color: white;
+  cursor: pointer;
+    font-size: 1.125em;
+    font-weight: normal;
+  }
+
+  button#SIGN-IN-button.button-submit {
+    display: inline-block;
+text-align: center;
+align-items: flex-start
 }
