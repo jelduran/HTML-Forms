@@ -114,9 +114,25 @@ footer{
     background: green;
 }
 
-#main-container > header{
-    height: 20%;
-    background: magenta;
+#logo-header{
+    padding: 20px 0;
+    background: #eceef1;
+    text-align: center;
+}
+
+#logo-container{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+#header-brand{
+    display: block;
+    width: 118px;
+    height: 35px;
+    background-image: url(../img/ecosystem_logos_new.png);
+    background-position: 0 0;
+    margin: 0 auto;
 }
 
 #form-container{
