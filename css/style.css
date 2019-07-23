@@ -15,18 +15,19 @@ body{
     height: 100%;
     background: #eceef1;
     font-size: 12px;
+    line-height: 5;
 }
 
 main{
     width: 30%;
     height: 80%;
     margin: 0 auto;
-    background: yellow;
+    background: #ECEEF1;
 }
 
 footer{
     height: 15%;
-    background: red;
+    background: #ECEEF1;
 }
 
 
@@ -54,11 +55,11 @@ footer{
     font-weight: 400;
     color: #505050;
 }
-  
+
 .navigation-container a {
     color: #0077C5;
 }
-  
+
 .navigation-column {
     float: left;
     margin-left: 20px;
@@ -111,7 +112,7 @@ footer{
 
 #main-container{
     height: 70%;
-    background: green;
+    background: #eceef1;
 }
 
 #logo-header{
@@ -180,4 +181,57 @@ button#SIGN-IN-button.button-submit {
     display: inline-block;
 text-align: center;
 align-items: flex-start
+}
+.wrap {
+  width: 380px;
+  margin: auto;
+  background: white;
+  margin-top: 50px;
+  padding: 5px;
+
+}
+form {
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px dotted gray;
+  margin: 10px;
+}
+h2 {
+  text-align: center;
+  color: black;
+  padding: 10px;
+}
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+}
+h4 {
+  width: auto;
+  color: blue;
+  text-align: center;
+  font-size: 12px;
+}
+input[type=email], input[type=phone], input[type=password], {
+  width: 90%;
+  line-height: normal;
+}
+input[type=submit-btn] {
+  width: 95%;
+  background: blue;
+  cursor:  pointer;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+input[type=submit-btn] :hover {
+  background: blue;
+}
+select {
+  padding: 10px;
+  width: 32%;
+  border-radius: 5px;
 }
