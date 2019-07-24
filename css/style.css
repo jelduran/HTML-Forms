@@ -155,6 +155,16 @@ footer{
     color: #0077C5;
 }
 
+.lock-left{
+    background: url(../img/lock-left-grey@3x.png) 0 50%/21px 21px no-repeat;
+    width: 33px;
+    position: absolute;
+    right: 1px;
+    height: 32px;
+    top: 1px;
+    bottom: 1px;   
+}
+
 
 
 /* IDENTIFIERS */
