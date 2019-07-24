@@ -9,25 +9,30 @@
 
 html{
     height: 100%;
+    font-family: AvenirNext,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 body{
     height: 100%;
     background: #eceef1;
-    font-size: 12px;
-    line-height: 5;
+    font-size: 14px;
 }
 
 main{
-    width: 30%;
-    height: 80%;
+    width: auto;
+    height: auto;
     margin: 0 auto;
     background: #ECEEF1;
 }
 
+form {
+    line-height: 1.5;
+    text-align: left;
+}
+
 footer{
     height: 15%;
-    background: #ECEEF1;
+    background: none;
 }
 
 
@@ -87,7 +92,6 @@ footer{
 
 .white-lock-img{
     height: 1em;
-    height: 1em;
     width: .8em;
     margin-top: 2px;
     margin-right: 4px;
@@ -97,6 +101,61 @@ footer{
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.form-set{
+    padding-bottom: 1.9em;
+    text-align: left;
+    line-height: 1.5;
+    display: block;
+}
+
+.form-set label{
+    padding-bottom: 6px;
+    font-weight: 400;
+    color: #404040;
+    font-size: 14px;
+    line-height: 25px;
+    display: block;
+}
+
+.form-set > div{
+    position: relative;
+    width: 320px;
+    min-width: 160px;
+}
+
+.form-set > div > input{
+    border: 1px solid #C1C5C8;
+    border-radius: 3px;
+    line-height: 1.3em;
+    width: 320px;
+    height: 34px;
+    min-width: 160px;
+    padding-left: 8px;
+    padding-right: 6px;
+}
+
+.form-sms-warning{
+    padding: 5px 0;
+    font-size: 10px;
+    font-weight: 400;
+    color: #444;
+}
+
+.form-footer{
+    text-align: center;
+    line-height: 1.5;
+    font-style: italic;
+    font-size: 12px;
+    color: #757575;
+}
+
+.plain-link{
+    text-decoration: none;
+    color: #0077C5;
+}
+
+
 
 /* IDENTIFIERS */
 
@@ -137,7 +196,7 @@ footer{
 }
 
 #form-container{
-    height: 80%;
+    height: auto;
 }
 
 #form-container > header{
@@ -145,6 +204,11 @@ footer{
     width: 30%;
     margin: 0 auto;
     background: burlywood;
+}
+
+#other-logos{
+    width: 380px;
+    margin: 0 auto;
 }
 
 #navigation-wrap {
@@ -156,82 +220,97 @@ footer{
     padding: 10px 20px;
 }
 
-#account-recovery-link{
-   text-decoration: none;
-
-}
-
 div#navigation-column {
     float: left;
     margin-left: 10px;
     text-align: right;
 }
 
-button#SIGN-IN-button.button-submit {
-  background: blue;
- border-radius: 10px;
- border: 20px solid blue;
- color: white;
-  cursor: pointer;
-    font-size: 1.125em;
-    font-weight: normal;
-  }
-
-  button#SIGN-IN-button.button-submit {
-    display: inline-block;
-text-align: center;
-align-items: flex-start
-}
-.wrap {
+#form-wrapper {
   width: 380px;
+  height: 80%;
   margin: auto;
+  border: 1px solid #c7c7c7;
+  border-radius: 2px;
   background: white;
   margin-top: 50px;
-  padding: 5px;
-
-}
-form {
-  padding: 10px;
-  font-family: 'Times New Roman', Times, serif;
-  border: 1px dotted gray;
-  margin: 10px;
-}
-h2 {
-  text-align: center;
-  color: black;
-  padding: 10px;
-}
-input {
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
-  border: none;
-}
-h4 {
-  width: auto;
-  color: blue;
-  text-align: center;
-  font-size: 12px;
-}
-input[type=email], input[type=phone], input[type=password], {
-  width: 90%;
-  line-height: normal;
-}
-input[type=submit-btn] {
-  width: 95%;
-  background: blue;
-  cursor:  pointer;
-  font-size: 18px;
-  font-weight: normal;
-  color: white;
+  padding: 30px;
   margin: auto;
-  text-align: center;
+  overflow: visible;
 }
-input[type=submit-btn] :hover {
-  background: blue;
+
+#sign-up{
+    color: #4C4C4C;
 }
-select {
-  padding: 10px;
-  width: 32%;
-  border-radius: 5px;
+
+#sign-up header{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#sign-up-title{
+    line-height: 1.1;
+    font-size: 24px;
+}
+
+#sign-up-subtitle{
+    display: block;
+    font-weight: 300;
+    line-height: 1.2;
+    padding-top: 20px;
+}
+
+#sign-up-subtitle > div{
+    font-size: 14px;
+}
+
+#sign-up-subtitle > div > a{
+    color: #0077C5;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#sign-up-actions{
+    padding-bottom: 41px;
+}
+
+#sign-up-actions button{
+    width: 100%;
+    height: 44px;
+    border: #0077C5;
+    text-shadow: none;
+    font-weight: 400;
+    font-size: 1em;
+    color: #FFF;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.75);
+    min-width: 100px;
+    display: inline-block;
+    padding: 6px 12px;
+    line-height: 1.428571429;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#btn-actions-text{
+    text-shadow: none;
+    font-weight: 400;
+    font-size: 1.125em;
+    color: #FFF;
+    line-height: 1.428571429;
+    white-space: nowrap;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#captcha-info{
+    background-color: #ECEEF1;
+    margin: 32px -30px -30px;
+    padding: 16px;
+    text-align: center;
+}
+
+#captcha-info > span{
+    font-size: 10px;
+    color: #8d9096;
 }
