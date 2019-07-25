@@ -165,6 +165,59 @@ footer{
     bottom: 1px;   
 }
 
+.logos-list{
+    height: 23px;
+    width: 318px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    margin: 0 auto 15px;
+}
+
+.li-left-142px{
+    left: 142px;
+}
+
+.mint-favicon{
+    background: url(../img/mint-favicon.svg) no-repeat;
+}
+.mint-text{
+    background: url(../img/mint-text.svg) no-repeat;
+    width: 37px;
+    height: 20px;
+    margin-right: 9px;
+}
+
+.quickbooks-favicon{
+    background: url(../img/quickbooks-favicon@2x.svg) no-repeat;
+}
+.quickbooks-text{
+    background: url(../img/quick-books-text.svg) no-repeat;
+    width: 98px;
+    height: 22px;
+    margin-right: 9px;
+}
+
+.turbotax-favicon{
+    background: url(../img/tt-favicon@2x.svg) no-repeat;
+}
+.turbotax-text{
+    background: url(../img/turbo-tax-text.svg) no-repeat;
+    width: 74px;
+    height: 22px;
+}
+
+.other-icon{
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.other-icon-text{
+    display: inline-block;
+}
+
 
 
 /* IDENTIFIERS */
@@ -217,8 +270,16 @@ footer{
 }
 
 #other-logos{
-    width: 380px;
+    padding-bottom: 4px;
+    padding-top: 0;
+}
+
+#other-logos-container{
+    list-style: none;
     margin: 0 auto;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 #navigation-wrap {
