@@ -31,8 +31,6 @@ form {
 }
 
 footer{
-    height: 15%;
-    background: none;
 }
 
 
@@ -218,6 +216,38 @@ footer{
     display: inline-block;
 }
 
+.page-footer-container{
+    color: #505050;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.footer-link-list{
+    list-style: none;
+    padding-top: 5px;
+}
+
+.footer-link-list li:first-child{
+    padding-left: 0;
+}
+
+.footer-link-list li{
+    display: inline;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.footer-link-list li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-link-list li a:hover{
+    text-decoration: underline;
+    color: inherit;
+}
+
 
 
 /* IDENTIFIERS */
@@ -308,6 +338,7 @@ div#navigation-column {
   padding: 30px;
   margin: auto;
   overflow: visible;
+  line-height: 1.5;
 }
 
 #sign-up{
@@ -384,4 +415,12 @@ div#navigation-column {
 #captcha-info > span{
     font-size: 10px;
     color: #8d9096;
+}
+
+#main-footer{    
+    width: 90%;
+    color: #505050;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
 }
