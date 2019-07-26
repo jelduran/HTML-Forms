@@ -1,0 +1,426 @@
+/* TAGS */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    font-family: AvenirNext,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body{
+    height: 100%;
+    background: #eceef1;
+    font-size: 14px;
+}
+
+main{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    background: #ECEEF1;
+}
+
+form {
+    line-height: 1.5;
+    text-align: left;
+}
+
+footer{
+}
+
+
+/* CLASSES */
+
+.full-width{
+    width: 100%;
+}
+
+.full-height{
+    height: 100%;
+}
+
+.auto-height{
+    height: auto;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.navigation-container {
+    float: right;
+    font-family: AvenirNext,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: #505050;
+}
+
+.navigation-container a {
+    color: #0077C5;
+}
+
+.navigation-column {
+    float: left;
+    margin-left: 20px;
+    text-align: right;
+}
+
+.btn{
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    color: white;
+    cursor: pointer;
+    font-size: 1.125em;
+    font-weight: normal;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    height: 34px;
+}
+
+.btn-submit{
+    background: #0077C5;
+    border-radius: 4px;
+    border: 1px solid #4c4c4c;
+}
+
+.white-lock-img{
+    height: 1em;
+    width: .8em;
+    margin-top: 2px;
+    margin-right: 4px;
+    vertical-align: text-top;
+    display: inline-block;
+    background-image: url(../img/icon-whitelock@3x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.form-set{
+    padding-bottom: 1.9em;
+    text-align: left;
+    line-height: 1.5;
+    display: block;
+}
+
+.form-set label{
+    padding-bottom: 6px;
+    font-weight: 400;
+    color: #404040;
+    font-size: 14px;
+    line-height: 25px;
+    display: block;
+}
+
+.form-set > div{
+    position: relative;
+    width: 320px;
+    min-width: 160px;
+}
+
+.form-set > div > input{
+    border: 1px solid #C1C5C8;
+    border-radius: 3px;
+    line-height: 1.3em;
+    width: 320px;
+    height: 34px;
+    min-width: 160px;
+    padding-left: 8px;
+    padding-right: 6px;
+}
+
+.form-sms-warning{
+    padding: 5px 0;
+    font-size: 10px;
+    font-weight: 400;
+    color: #444;
+}
+
+.form-footer{
+    text-align: center;
+    line-height: 1.5;
+    font-style: italic;
+    font-size: 12px;
+    color: #757575;
+}
+
+.plain-link{
+    text-decoration: none;
+    color: #0077C5;
+}
+
+.lock-left{
+    background: url(../img/lock-left-grey@3x.png) 0 50%/21px 21px no-repeat;
+    width: 33px;
+    position: absolute;
+    right: 1px;
+    height: 32px;
+    top: 1px;
+    bottom: 1px;   
+}
+
+.logos-list{
+    height: 23px;
+    width: 318px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    margin: 0 auto 15px;
+}
+
+.li-left-142px{
+    left: 142px;
+}
+
+.mint-favicon{
+    background: url(../img/mint-favicon.svg) no-repeat;
+}
+.mint-text{
+    background: url(../img/mint-text.svg) no-repeat;
+    width: 37px;
+    height: 20px;
+    margin-right: 9px;
+}
+
+.quickbooks-favicon{
+    background: url(../img/quickbooks-favicon@2x.svg) no-repeat;
+}
+.quickbooks-text{
+    background: url(../img/quick-books-text.svg) no-repeat;
+    width: 98px;
+    height: 22px;
+    margin-right: 9px;
+}
+
+.turbotax-favicon{
+    background: url(../img/tt-favicon@2x.svg) no-repeat;
+}
+.turbotax-text{
+    background: url(../img/turbo-tax-text.svg) no-repeat;
+    width: 74px;
+    height: 22px;
+}
+
+.other-icon{
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.other-icon-text{
+    display: inline-block;
+}
+
+.page-footer-container{
+    color: #505050;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.footer-link-list{
+    list-style: none;
+    padding-top: 5px;
+}
+
+.footer-link-list li:first-child{
+    padding-left: 0;
+}
+
+.footer-link-list li{
+    display: inline;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.footer-link-list li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-link-list li a:hover{
+    text-decoration: underline;
+    color: inherit;
+}
+
+
+
+/* IDENTIFIERS */
+
+#main-header{
+    background: none;
+    height: 60px;
+    padding: 10px 30px;
+    float: none;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#main-container{
+    height: 70%;
+    background: #eceef1;
+}
+
+#logo-header{
+    padding: 20px 0;
+    background: #eceef1;
+    text-align: center;
+}
+
+#logo-container{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+#header-brand{
+    display: block;
+    width: 118px;
+    height: 35px;
+    background-image: url(../img/ecosystem_logos_new.png);
+    background-position: 0 0;
+    margin: 0 auto;
+}
+
+#form-container{
+    height: auto;
+}
+
+#form-container > header{
+    height: 20%;
+    width: 30%;
+    margin: 0 auto;
+    background: burlywood;
+}
+
+#other-logos{
+    padding-bottom: 4px;
+    padding-top: 0;
+}
+
+#other-logos-container{
+    list-style: none;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#navigation-wrap {
+    height: 50px;
+}
+
+#navigation-wrap {
+    float: none;
+    padding: 10px 20px;
+}
+
+div#navigation-column {
+    float: left;
+    margin-left: 10px;
+    text-align: right;
+}
+
+#form-wrapper {
+  width: 380px;
+  height: 80%;
+  margin: auto;
+  border: 1px solid #c7c7c7;
+  border-radius: 2px;
+  background: white;
+  margin-top: 50px;
+  padding: 30px;
+  margin: auto;
+  overflow: visible;
+  line-height: 1.5;
+}
+
+#sign-up{
+    color: #4C4C4C;
+}
+
+#sign-up header{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#sign-up-title{
+    line-height: 1.1;
+    font-size: 24px;
+}
+
+#sign-up-subtitle{
+    display: block;
+    font-weight: 300;
+    line-height: 1.2;
+    padding-top: 20px;
+}
+
+#sign-up-subtitle > div{
+    font-size: 14px;
+}
+
+#sign-up-subtitle > div > a{
+    color: #0077C5;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#sign-up-actions{
+    padding-bottom: 41px;
+}
+
+#sign-up-actions button{
+    width: 100%;
+    height: 44px;
+    border: #0077C5;
+    text-shadow: none;
+    font-weight: 400;
+    font-size: 1em;
+    color: #FFF;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.75);
+    min-width: 100px;
+    display: inline-block;
+    padding: 6px 12px;
+    line-height: 1.428571429;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#btn-actions-text{
+    text-shadow: none;
+    font-weight: 400;
+    font-size: 1.125em;
+    color: #FFF;
+    line-height: 1.428571429;
+    white-space: nowrap;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#captcha-info{
+    background-color: #ECEEF1;
+    margin: 32px -30px -30px;
+    padding: 16px;
+    text-align: center;
+}
+
+#captcha-info > span{
+    font-size: 10px;
+    color: #8d9096;
+}
+
+#main-footer{    
+    width: 90%;
+    color: #505050;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
